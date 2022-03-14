@@ -12,12 +12,17 @@ var routes = [
     path: '/drugNames',
     componentUrl: './pages/drugNames.html',
   },
+  {
+    path: '/clincalTrials',
+    componentUrl: './pages/clinicalTrials.html',
+  },
 
 
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',
     componentUrl: './pages/dynamic-route.html',
   },
+
   {
     path: '/request-and-load/user/:userId/',
     async: function ({ router, to, resolve }) {
@@ -28,7 +33,8 @@ var routes = [
       app.preloader.show();
 
       // User ID from request
-      var userId = to.params.userId;
+      var userId = to.params.userId;      
+      
 
       // Simulate Ajax Request
       setTimeout(function () {

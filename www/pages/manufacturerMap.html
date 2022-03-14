@@ -17,6 +17,7 @@
         </div>
       </div>
     </div>
+
     <div class="page-content">
       <div class="distribution-map">
         <img src="assets/map.png" class="map" alt="Map" />
@@ -440,8 +441,10 @@
   }
 </style>
 <script>
-  export default (props) => {
-
+  export default function (props, { $f7, $on }) {
+    $on('pageInit', (e, page) => {
+      console.log('pageInit', page);
+    });
     return $render;
   }
 </script>
