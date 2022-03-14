@@ -1,15 +1,15 @@
 
 var routes = [
   {
-    path: '/',
+    path: '/royaltypharma_demo',
     componentUrl: '../pages/home.html',
   },
   {
-    path: '/manufacturerMap',
+    path: '/royaltypharma_demo/manufacturerMap',
     componentUrl: '../pages/manufacturerMap.html',
   },
   {
-    path: '/drugNames',
+    path: '/royaltypharma_demo/drugNames',
     componentUrl: '../pages/drugNames.html',
   },
 
