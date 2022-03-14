@@ -1,0 +1,19 @@
+{
+  "cwd": "C:\\sites\\cm",
+  "type": [
+    "web"
+  ],
+  "name": "royaltyPharma_demo",
+  "framework": "core",
+  "template": "single-view",
+  "bundler": false,
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": true,
+    "color": "#485b88",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false
+}

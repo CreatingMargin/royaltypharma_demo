@@ -1,0 +1,85 @@
+<template>
+    <div class="page">
+        <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+
+                <div class="left">
+                    <!-- <a href="#" class="link icon-only">
+              <i class="icon icon-back"></i>
+            </a> -->
+                </div>
+                <div class="title">Choose a Model</div>
+                <div class="right">
+                    <a href="#" class="link">
+                        <img src="assets/logo.png" />
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="page-content" style="overflow-x: hidden;">
+
+            <div class="hex-container">
+                <a id="btnDrugNames" href="/drugNames" class="hexagon hidden">
+                    <div class="hex-text">
+                        <p>Drug Names</p>
+                    </div>
+                </a>
+                <a id="btnClinicalTrials" href="#" class="hexagon hidden">
+                    <div class="hex-text">
+                        <p>Clinical Trials</p>
+                    </div>
+                </a>
+                <a id="btnIndicationGroups" href="#" class="hexagon hidden">
+                    <div class="hex-text">
+                        <p>Indication Groups</p>
+                    </div>
+                </a>
+                <a id="btnManufacturerMap" href="/manufacturerMap" class="hexagon hidden">
+                    <div class="hex-text">
+                        <p>Manufacturer Map</p>
+                    </div>
+                </a>
+                <a id="btnDiseaseNames" href="#" class="hexagon hidden ">
+                    <div class="hex-text">
+                        <p>Disease Names</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</template>
+<script>
+    export default function (props, { $f7, $on }) {
+
+        $on('pageInit', (e, page) => {
+            console.log('pageInit', page);
+        });
+
+        $on('pageAfterIn', (e, page) => {
+            console.log('pageAfterIn', $f7);
+            app.methods.animateCSS("#btnDrugNames", 'slideInLeft');
+            app.methods.animateCSS("#btnClinicalTrials", 'slideInDown');
+            app.methods.animateCSS("#btnIndicationGroups", 'slideInRight');
+            app.methods.animateCSS("#btnManufacturerMap", 'slideInUp');
+            setTimeout(function () {
+                app.methods.animateCSS("#btnDiseaseNames", 'slideInUp');
+            }, 200);
+
+        });
+
+        $on('pageAfterOut', (e, page) => {
+            console.log('pageAfterIn', $f7);
+            app.methods.animateCSS("#btnDrugNames", 'fadeOut');
+            app.methods.animateCSS("#btnClinicalTrials", 'fadeOut');
+            app.methods.animateCSS("#btnIndicationGroups", 'fadeOut');
+            app.methods.animateCSS("#btnManufacturerMap", 'fadeOut');
+            app.methods.animateCSS("#btnDiseaseNames", 'fadeOut');
+        });
+
+        // Return render function
+        return $render;
+    }
+</script>
