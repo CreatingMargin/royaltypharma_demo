@@ -2,21 +2,21 @@
 var routes = [
   {
     path: '/',
-    componentUrl: './pages/home.html',
+    componentUrl: '../pages/home.html',
   },
   {
     path: '/manufacturerMap',
-    componentUrl: './pages/manufacturerMap.html',
+    componentUrl: '../pages/manufacturerMap.html',
   },
   {
     path: '/drugNames',
-    componentUrl: './pages/drugNames.html',
+    componentUrl: '../pages/drugNames.html',
   },
 
 
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',
-    componentUrl: './pages/dynamic-route.html',
+    componentUrl: '../pages/dynamic-route.html',
   },
   {
     path: '/request-and-load/user/:userId/',
