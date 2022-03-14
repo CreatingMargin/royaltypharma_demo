@@ -1,22 +1,22 @@
 
 var routes = [
   {
-    path: '/royaltypharma_demo/www',
-    componentUrl: '../pages/home.html',
+    path: '/',
+    componentUrl: './pages/home.html',
   },
   {
-    path: '/royaltypharma_demo/www/manufacturerMap',
-    componentUrl: '../pages/manufacturerMap.html',
+    path: '/manufacturerMap',
+    componentUrl: './pages/manufacturerMap.html',
   },
   {
-    path: '/royaltypharma_demo/www/drugNames',
-    componentUrl: '../pages/drugNames.html',
+    path: '/drugNames',
+    componentUrl: './pages/drugNames.html',
   },
 
 
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',
-    componentUrl: '../pages/dynamic-route.html',
+    componentUrl: './pages/dynamic-route.html',
   },
   {
     path: '/request-and-load/user/:userId/',
