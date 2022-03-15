@@ -16,6 +16,10 @@ var routes = [
     path: '/clincalTrials',
     componentUrl: './pages/clinicalTrials.html',
   },
+  {
+    path: '/indicationGroups',
+    componentUrl: './pages/indicationGroups.html',
+  },
 
 
   {
