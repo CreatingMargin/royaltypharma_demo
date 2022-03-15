@@ -1,0 +1,264 @@
+{
+    "name": "drugData",
+    "children": [
+     {
+        "name": "Neurological Products",
+        "children": [
+            {
+                "name": "Amyotrophic lateral sclerosis",
+                "children" : [
+                    {"name": "210607", "size": 1983},
+                    {"name": "210609", "size": 2047}
+                ]
+            }, 
+            {
+                "name": "Traumatic brain injury",
+                "children" : [
+                    {"name": "210607", "size": 1375},
+                    {"name": "210609", "size": 2202}
+                ]
+            },
+            {
+                "name": "Alzheimer's disease",
+                "children" : [
+                    {"name": "210607", "size": 8746},
+                    {"name": "210609", "size": 5176}
+                ]
+            },
+            {
+                "name": "Huntington's disease",
+                "children" : [
+                    {"name": "210607", "size": 1629},
+                    {"name": "210609", "size": 1116}
+                ]
+            },
+            {
+                "name": "Dementia, frontotemporal",
+                "children" : [
+                    {"name": "210607", "size": 5534},
+                    {"name": "210609", "size": 1116}
+                ]
+            },
+            {
+                "name": "Parkinson's disease",
+                "children" : [
+                    {"name": "210610", "size": 2047}
+                ]
+            }
+        ]
+     },
+     {
+        "name": "Neurological",
+        "children": [
+            {
+                "name": "Amyotrophic lateral sclerosis",
+                "children" : [
+                    {"name": "210606", "size": 983},
+                    {"name": "210613", "size": 2047},
+                    {"name": "210614", "size": 842},
+                    {"name": "210615", "size": 6201}
+                ]
+            }, 
+            {
+                "name": "Traumatic brain injury",
+                "children" : [
+                    {"name": "210606", "size": 1375},
+                    {"name": "210609", "size": 2102},
+                    {"name": "210614", "size": 5842},
+                    {"name": "210615", "size": 12201}
+                ]
+            },
+            {
+                "name": "Alzheimer's disease",
+                "children" : [
+                    {"name": "210606", "size": 8746},
+                    {"name": "210613", "size": 5176},
+                    {"name": "210614", "size": 5842},
+                    {"name": "210615", "size": 9201}
+                ]
+            },
+            {
+                "name": "Huntington's disease",
+                "children" : [
+                    {"name": "210606", "size": 1629},
+                    {"name": "210609", "size": 1116},
+                    {"name": "210614", "size": 5842},
+                    {"name": "210615", "size": 9201}
+                ]
+            },
+            {
+                "name": "Dementia, frontotemporal",
+                "children" : [
+                    {"name": "210606", "size": 5534},
+                    {"name": "210609", "size": 1116},
+                    {"name": "210614", "size": 5842},
+                    {"name": "210615", "size": 9201}
+                ]
+            },
+            {
+                "name": "Parkinson's disease",
+                "children" : [
+                    {"name": "210614", "size": 2047},
+                    {"name": "210615", "size": 9201}
+                ]
+            },
+            {
+                "name": "Depression, major depressive disorder",
+                "children" : [
+                    {"name": "210626", "size": 6006}
+                ]
+            }
+        ]
+     },
+     {
+        "name": "Anticancer",
+        "children": [
+            {
+                "name": "Diagnosis, cancer",
+                "children" : [
+                    {"name": "210603", "size": 4483}
+                ]
+            }, 
+            {
+                "name": "Cancer, solid, unspecified",
+                "children" : [
+                    {"name": "210603", "size": 1375},
+                    {"name": "210669", "size": 2202},
+                    {"name": "210671", "size": 8202},
+                    {"name": "210672", "size": 12202}
+                ]
+            },
+            {
+                "name": "Cancer, lung, unspecified",
+                "children" : [
+                    {"name": "210624", "size": 8746}
+                ]
+            },
+            {
+                "name": "Cancer, leukaemia, chronic lymphocytic",
+                "children" : [
+                    {"name": "210636", "size": 5629}
+                ]
+            },
+            {
+                "name": "Cancer, haematological, unspecified",
+                "children" : [
+                    {"name": "210669", "size": 5534},
+                    {"name": "210671", "size": 1116},
+                    {"name": "210672", "size": 9202}
+                ]
+            },
+            {
+                "name": "Cancer, colorectal",
+                "children" : [
+                    {"name": "210670", "size": 2047}
+                ]
+            }
+        ]
+     },
+     {
+        "name": "Anticancer Products",
+        "children": [
+            {
+                "name": "Cancer, unspecified",
+                "children" : [
+                    {"name": "210601", "size": 1983},
+                    {"name": "210621", "size": 9047}
+                ]
+            }, 
+            {
+                "name": "Cancer, solid, unspecified",
+                "children" : [
+                    {"name": "210666", "size": 20375}
+                ]
+            }
+        ]
+     },
+     {
+        "name": "Respiratory",
+        "children": [
+            {
+                "name": "Asthma",
+                "children" : [
+                    {"name": "210617", "size": 1983},
+                    {"name": "210618", "size": 9047}
+                ]
+            }, 
+            {
+                "name": "Respiratory disease, unspecified",
+                "children" : [
+                    {"name": "210617", "size": 20375},
+                    {"name": "210618", "size": 10047}
+                ]
+            }
+        ]
+     },
+     {
+        "name": "Respiratory Products",
+        "children": [
+            {
+                "name": "Asthma", 
+                "children": [
+                    {"name": "210616", "size": 30000}
+             ]
+            }
+        ]
+     },
+     {
+        "name": "Blood and Clotting",
+        "children": [
+            {
+                "name": "Haemophilia B", 
+                "children": [
+                    {"name": "210616", "size": 50000}
+             ]
+            }
+        ]
+     },
+     {
+        "name": "Anti-infective Products",
+        "children": [
+            {
+                "name": "Infection, coronavirus, novel coronavirus prophylaxis",
+                "children" : [
+                    {"name": "210600", "size": 20375}
+                ]
+            }, 
+            {
+                "name": "Infection, viral, unspecified",
+                "children" : [
+                    {"name": "210662", "size": 9375}
+                ]
+            }
+        ]
+     },
+     {
+        "name": "Alimentary/Metabolic Products",
+        "children": [
+            {
+                "name": "Crohn's disease", 
+                "children": [
+                    {"name": "210593", "size": 70000}
+             ]
+            }
+        ]
+     },
+     {
+        "name": "Genitourinary (including sex hormones)",
+        "children": [
+            {
+                "name": "Impotence",
+                "children" : [
+                    {"name": "210619", "size": 50000}
+                ]
+            }, 
+            {
+                "name": "Polycystic kidney disease",
+                "children" : [
+                    {"name": "210667", "size": 20375}
+                ]
+            }
+        ]
+     }
+    ]
+}
