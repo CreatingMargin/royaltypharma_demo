@@ -199,7 +199,7 @@
             {
                 "name": "Asthma", 
                 "children": [
-                    {"name": "210616", "size": 30000}
+                    {"name": "210616", "size": 70000}
              ]
             }
         ]
@@ -210,7 +210,7 @@
             {
                 "name": "Haemophilia B", 
                 "children": [
-                    {"name": "210616", "size": 50000}
+                    {"name": "210616", "size": 60000}
              ]
             }
         ]
@@ -221,13 +221,13 @@
             {
                 "name": "Infection, coronavirus, novel coronavirus prophylaxis",
                 "children" : [
-                    {"name": "210600", "size": 20375}
+                    {"name": "210600", "size": 40375}
                 ]
             }, 
             {
                 "name": "Infection, viral, unspecified",
                 "children" : [
-                    {"name": "210662", "size": 9375}
+                    {"name": "210662", "size": 20375}
                 ]
             }
         ]
@@ -238,7 +238,7 @@
             {
                 "name": "Crohn's disease", 
                 "children": [
-                    {"name": "210593", "size": 70000}
+                    {"name": "210593", "size": 150000}
              ]
             }
         ]
@@ -249,13 +249,13 @@
             {
                 "name": "Impotence",
                 "children" : [
-                    {"name": "210619", "size": 50000}
+                    {"name": "210619", "size": 80000}
                 ]
             }, 
             {
                 "name": "Polycystic kidney disease",
                 "children" : [
-                    {"name": "210667", "size": 20375}
+                    {"name": "210667", "size": 50375}
                 ]
             }
         ]

@@ -30,7 +30,6 @@
     opacity: 1;
 }
 
-
 .animate__animated.animate__fadeInLeft,
 .animate__animated.animate__fadeOutLeft {
     --animate-duration: 1s;
@@ -42,4 +41,15 @@
 
 .animate__animated.animate__zoomOut {
     --animate-duration: .25;
+}
+
+.navbar a.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.logo {
+    width: 100%;
 }
