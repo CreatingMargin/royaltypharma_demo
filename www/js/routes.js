@@ -20,7 +20,10 @@ var routes = [
     path: '/indicationGroups',
     componentUrl: './pages/indicationGroups.html',
   },
-
+  {
+    path: '/salesforcast',
+    componentUrl: './pages/salesForcast.html',
+  },
 
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',

@@ -1,0 +1,61 @@
+<template>
+    <div class="page">
+        <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="if-not-md">Back</span>
+                      </a>
+                </div>
+                <div class="title">Sales Forecast</div>
+                <div class="right">
+                    <a href="#" class="link">
+                        <img class="logo" src="assets/logo.svg" />
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="page-content-sales">
+            <iframe src="https://api.nasdaqomx.wallst.com/advancedchart?display=line&symbol=RPRX.O-RPRX&scale=linear&duration=1dy&frequency=15min&gridLine=b&bgColor=ffffff&lineColor=495c8a&fillcolor=687fb1|687fb1&width=100%&height=500&bdr=2&volColorUpDown=000000|888888&volume=1" 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0" 
+                    scrolling="no" 
+                    scroll="no"
+                    allowtransparency="true" 
+                    class="nir-stock-chart" 
+                    style="width: 100%; height: 550px; overflow: hidden;"
+                    >
+            </iframe>
+
+        </div>
+    </div>
+</template>
+<style>
+    
+    .page-content-sales {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+</style>
+<script>
+    export default function (props, { $f7, $on }) {
+
+        $on('pageInit', (e, page) => {
+            console.log('pageInit', page);
+        });
+
+
+
+        // Return render function
+        return $render;
+    }
+</script>
