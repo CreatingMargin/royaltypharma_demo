@@ -101,3 +101,7 @@
 .bar .back-btn-div {
     width: 32%;
 }
+
+.bar .choose-div {
+    display: flex;
+}
