@@ -1,22 +1,26 @@
 <template>
     <div class="page">
-      <div class="navbar">
-        <div class="navbar-bg"></div>
-        <div class="navbar-inner sliding">
+      
+      <div class="bar">
+        <div>
           <div class="left">
-            <a href="#" class="back link">
-              <i class="icon icon-back"></i>
-              <span class="if-not-md">Back</span>
-            </a>
-          </div>
-          <div class="title">Indication Groups</div>
-          <div class="right">
-            <a href="#" class="link">
-              <img src="assets/logo.png" />
-            </a>
+
+            <div class="title">Indication Groups</div>
           </div>
         </div>
+        <div>
+          <a href="#" class="back link">
+            <i class="icon icon-back"></i>
+            <span class="">Back</span>
+          </a>
+        </div>
+        <div class="right">
+          <a href="#" class="link">
+            <img class="logo" src="assets/logo.png" />
+          </a>
+        </div>
       </div>
+      
   
       <div class="page-content">
         <div class="drug-page">
@@ -30,13 +34,15 @@
   
   <style>
     /* Drug Page Styling */
-
+    svg{
+    background: transparent !important;
+}
     .drug-page {
         width: 100%;
         /* If ask to remove scroll on 1920 x 1080 
         then revert back to height: 100vh;    
         */
-        height: 105vh;
+        height: 100vh;
     }
 
     .zoomable-circle {

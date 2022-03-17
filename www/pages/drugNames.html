@@ -1,23 +1,25 @@
 <template>
   <div class="page">
-    <div class="navbar">
-      <div class="navbar-bg"></div>
-      <div class="navbar-inner sliding">
+    <div class="bar">
+      <div>
         <div class="left">
-          <a href="#" class="back link">
-            <i class="icon icon-back"></i>
-            <span class="if-not-md">Back</span>
-          </a>
-        </div>
-        <div class="title">Drug Names</div>
-        <div class="right">
-          <a href="#" class="link">
-            <img class="logo" src="assets/logo.svg" />
-          </a>
+
+          <div class="title">Drug Names</div>
         </div>
       </div>
+      <div>
+        <a href="#" class="back link">
+          <i class="icon icon-back"></i>
+          <span class="">Back</span>
+        </a>
+      </div>
+      <div class="right">
+        <a href="#" class="link">
+          <img class="logo" src="assets/logo.png" />
+        </a>
+      </div>
     </div>
-    <div class="page-content" style="padding:100px 50px">
+    <div class="page-content" style="padding:20px 50px">
       <div id="drugRoot" class="grid">
         ${drugs.value.map((drug) => $h`
         <div class="grid-item {{:~getBGColor(updatedDate)}}">
@@ -79,7 +81,7 @@
     position: absolute;
 
     left: 10px;
-    top: 60px;
+    top: 20px;
     text-transform: none;
     letter-spacing: 0;
     font-size: 12px;

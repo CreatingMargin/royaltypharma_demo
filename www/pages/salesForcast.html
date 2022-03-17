@@ -1,24 +1,6 @@
 <template>
     <div class="page">
-        <div class="navbar">
-            <div class="navbar-bg"></div>
-            <div class="navbar-inner">
-
-                <div class="left">
-                    <a href="#" class="back link">
-                        <i class="icon icon-back"></i>
-                        <span class="if-not-md">Back</span>
-                      </a>
-                </div>
-                <div class="title">Sales Forecast</div>
-                <div class="right">
-                    <a href="#" class="link">
-                        <img class="logo" src="assets/logo.svg" />
-                    </a>
-                </div>
-
-            </div>
-        </div>
+        
         <div class="page-content-sales">
             <iframe src="https://api.nasdaqomx.wallst.com/advancedchart?display=line&symbol=RPRX.O-RPRX&scale=linear&duration=1dy&frequency=15min&gridLine=b&bgColor=ffffff&lineColor=495c8a&fillcolor=687fb1|687fb1&width=100%&height=500&bdr=2&volColorUpDown=000000|888888&volume=1" 
                     width="100%" 
@@ -33,6 +15,26 @@
             </iframe>
 
         </div>
+
+        <div class="bar">
+            <div>
+              <div class="left">
+    
+                <div class="title">Sales Forecast</div>
+              </div>
+            </div>
+            <div>
+              <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span class="">Back</span>
+              </a>
+            </div>
+            <div class="right">
+              <a href="#" class="link">
+                <img class="logo" src="assets/logo.png" />
+              </a>
+            </div>
+          </div>
     </div>
 </template>
 <style>
