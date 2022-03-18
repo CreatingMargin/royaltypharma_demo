@@ -195,14 +195,17 @@
   }
 </style>
 <script>
-  export default (props, { $store, $on }) => {
+  export default (props, { $store, $on, $route }) => {
     const drugs = $store.getters.drugs;
 
 
-    $on('pageInit', () => {
+    $on('pageInit', (e, page) => {
       // $store.dispatch('getDrugs');
       var elem = document.querySelector('#drugRoot');
       var filterCountries = document.querySelector('#filterCountries');
+      const country = page.route.query.country;
+      const $filterCountries = $('#filterCountries');
+      
       var iso = new Isotope(elem,{
         itemSelector: '.grid-item',
         layoutMode: 'fitRows',
@@ -213,12 +216,13 @@
       });
 
       filterCountries.addEventListener("change", function () {
-        var x = $('#filterCountries').val();
-        console.log(x);
-
-        // iso.isotope({ filter: '.metal' });
+        var x = $filterCountries.val();
         iso.arrange({ filter: x.join(',') });
       });
+
+      if(country){
+        $filterCountries.val('.' + country).trigger('change');
+      }
     });
     return $render;
   }
