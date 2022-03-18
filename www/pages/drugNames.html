@@ -3,27 +3,18 @@
     <div class="bar">
       <div>
         <div class="left">
-
           <div class="title">Drug Names</div>
         </div>
       </div>
-<<<<<<< Updated upstream
-      <div class="back-btn-div">
-        <a href="#" class="back link">
-          <i class="icon icon-back"></i>
-          <span class="">Back</span>
-        </a>
-=======
-      <div>
 
+      <div>
         <div class="row">
-          <!-- Each "cell" has col-[width in percents] class -->
           <div class="col-30">
             <p class="segmented segmented-raised">
-              <button class="button back">
+              <a class="button back">
                 <i class="icon icon-back"></i>
                 <span class="">Back</span>
-              </button>
+              </a>
               <button class="button">
                 <i class="f7-icons">dot_radiowaves_left_right</i>
                 <span class="">Cast</span>
@@ -36,12 +27,12 @@
                 <li>
                   <a class="item-link smart-select smart-select-init" data-open-in="popover">
                     <select id="filterCountries" name="superhero" multiple>
-                      <option value="USA" selected>United States</option>
-                      <option value="China" selected>China</option>
-                      <option value="Canada" selected>Canada</option>
-                      <option value="UK" selected>UK</option>
-                      <option value="Australia" selected>Australia</option>
-                      <option value="Taiwan, China" selected>Taiwan, China</option>
+                      <option value=".USA" selected>United States</option>
+                      <option value=".China" selected>China</option>
+                      <option value=".Canada" selected>Canada</option>
+                      <option value=".UK" selected>UK</option>
+                      <option value=".Australia" selected>Australia</option>
+                      <option value=".Taiwan, China" selected>Taiwan, China</option>
                     </select>
                     <div class="item-content">
                       <div class="item-inner">
@@ -54,16 +45,15 @@
             </div>
           </div>
         </div>
-
-
->>>>>>> Stashed changes
       </div>
+
       <div class="right">
         <a href="#" class="link">
           <img class="logo" src="assets/logo.png" />
         </a>
       </div>
     </div>
+
     <div class="page-content" style="padding:20px 50px">
       <div id="drugRoot" class="grid">
         ${drugs.value.map((drug) => $h`
@@ -76,11 +66,10 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <style>
-  /* ---- isotope ---- */
-
   .grid {
     /*border: 1px solid #333;*/
     margin: 0 auto;
@@ -102,7 +91,7 @@
     height: 250px;
     margin: 5px;
     padding: 10px;
-    background: #F1F3F3;
+    background: #96c0ff;
     color: #485b89;
     border-bottom-right-radius: 50px;
     border-top-left-radius: 20px;
@@ -214,7 +203,7 @@
       // $store.dispatch('getDrugs');
       var elem = document.querySelector('#drugRoot');
       var filterCountries = document.querySelector('#filterCountries');
-      var iso = $('#drugRoot').isotope({
+      var iso = new Isotope(elem,{
         itemSelector: '.grid-item',
         layoutMode: 'fitRows',
         masonry: {
@@ -222,12 +211,13 @@
           fitWidth: true
         }
       });
-      
-      filterCountries.addEventListener("change", function(){
-        var x = filterCountries.value;
+
+      filterCountries.addEventListener("change", function () {
+        var x = $('#filterCountries').val();
         console.log(x);
-        
-        iso.isotope({ filter: '.metal' });
+
+        // iso.isotope({ filter: '.metal' });
+        iso.arrange({ filter: x.join(',') });
       });
     });
     return $render;
